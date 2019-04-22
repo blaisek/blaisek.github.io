@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Petits comptes entre amis</title>
+         <script src="jquery.js"></script>
+	</head>
+	<body >
+            
+	<div class="top-right">
+            <h1> Dashboard </h1>
+	</div>
+           
+            <div class ="full-height position-ref">
+               
+                <button id='create_event' type="button">Create</button>
+               <button id= 'delete_event' type="button">Delete</button>     
+              
+            
+            </div>
+
+        <div id="window" style="background:gray;padding:20px;display:none;z-index:10001;position:absolute;top:0 ;center:0;height:500px;width:500px;"> 
+            <form>
+                <label for="event">Event name </label> <input type="text" id="event" class="champ" />
+                <br>
+                <label for="dsr">Description</label> <input type="description" id="dsr" class="champ" />
+                <br>
+                <label for="currency">Currency </label>  <input type="currency" id="currency" class="champ" />
+                
+            </form>
+        </div>
+
+	</body>
+       
+        <script>
+            $('#create_event').click(function(){
+    
+         $('#window').fadeIn();
+         //$('#exemple_fadein').fadeOut();
+    
+    var $event = $('#event');
+        $dsr = $('#dsr');
+        $currency = $('#currency');
+        
+/*
+    $champ.keyup(function(){
+        if($(this).val().length < 5){ // si la chaîne de caractères est inférieure à 5
+            $(this).css({ // on rend le champ rouge
+                borderColor : 'red',
+	        color : 'red'
+            });
+         }
+         else{
+             $(this).css({ // si tout est bon, on le rend vert
+	         borderColor : 'green',
+	         color : 'green'
+	     });
+         }
+    });
+
+    $confirmation.keyup(function(){
+        if($(this).val() != $mdp.val()){ // si la confirmation est différente du mot de passe
+            $(this).css({ // on rend le champ rouge
+     	        borderColor : 'red',
+        	color : 'red'
+            });
+        }
+        else{
+	    $(this).css({ // si tout est bon, on le rend vert
+	        borderColor : 'green',
+	        color : 'green'
+	    });
+        }
+    });
+
+    $envoi.click(function(e){
+        e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
+
+        // puis on lance la fonction de vérification sur tous les champs :
+        verifier($pseudo);
+        verifier($mdp);
+        verifier($confirmation);
+        verifier($mail);
+    });
+
+    $reset.click(function(){
+        $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+            borderColor : '#ccc',
+    	    color : '#555'
+        });
+        $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+    });
+
+    function verifier(champ){
+        if(champ.val() == ""){ // si le champ est vide
+    	    $erreur.css('display', 'block'); // on affiche le message d'erreur
+            champ.css({ // on rend le champ rouge
+    	        borderColor : 'red',
+    	        color : 'red'
+    	    });
+        }
+    }
+*/
+});
+
+        </script> 
+</html>
